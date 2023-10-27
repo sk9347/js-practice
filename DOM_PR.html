@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>SQL</h1>
+    <h3>1. What does SQL stand for?</h3>
+    <button>showanswer</button>
+    <p> Structured Query Language</p>
+    <h3>2. Which SQL command is used to retrieve data from a database?</h3>
+    <button>showanswer</button>
+    <p>SELECT</p>
+    <h3>3. Which SQL clause is used to filter records in a SELECT statement?</h3>
+    <button>showanswer</button>
+    <p>WHERE</p>
+    <h3>4. What does the SQL command "INSERT INTO" do?</h3>
+    <button>showanswer</button>
+    <p>Adds a new record</p>
+    <h3>5. Which SQL statement is used to modify existing data in a database?</h3>
+    <button>showanswer</button>
+    <p>UPDATE</p>
+    <h3>6. What is the purpose of the SQL command "DELETE"?</h3>
+    <button>showanswer</button>
+    <p>To remove data from a table</p>
+    <h3>7. What does SQL normalization refer to?</h3>
+    <button>showanswer</button>
+    <p> Reducing redundancy in data</p>
+    <h3>8. Which SQL function is used to find the maximum value in a column?</h3>
+    <button>showanswer</button>
+    <p>MAX()</p>
+    <h3>9. What SQL command is used to change the structure of a table?</h3>
+    <button>showanswer</button>
+    <p>ALTER</p>
+    <h3>10. Which SQL clause is used to sort the result set of a SELECT statement in ascending order?</h3>
+    <button>showanswer</button>
+    <p>ORDER BY</p>
+    <button>ironman</button>
+    <img src="https://wallpapers.com/images/featured/iron-man-ouqxo5w2b59h0042.jpg" alt="ironman" width="50%" height="auto">
+
+    <script>
+        
+        let a=document.getElementsByTagName("p");
+        let bt=document.getElementsByTagName("button")
+        a[0].style.visibility="hidden"
+        bt[0].addEventListener("click",an)
+        a[1].style.visibility="hidden"
+        bt[1].addEventListener("click",an1)
+        a[2].style.visibility="hidden"
+        bt[2].addEventListener("click",an2)
+        a[3].style.visibility="hidden"
+        bt[3].addEventListener("click",an3)
+        a[4].style.visibility="hidden"
+        bt[4].addEventListener("click",an4)
+        a[5].style.visibility="hidden"
+       
+       
+        function an(){
+            a[0].style.visibility="visible"
+        }
+        function an1(){
+            a[1].style.visibility="visible"
+        }
+        function an2(){
+            a[2].style.visibility="visible"
+        }
+        function an3(){
+            a[3].style.visibility="visible"
+        }
+        function an4(){
+            a[4].style.visibility="visible"
+        } 
+        bt[5].addEventListener("click",function (){
+            a[5].style.visibility="visible"
+        })
+        a[6].style.visibility="hidden"
+        bt[6].addEventListener("click",function (){
+            a[6].style.visibility="visible"
+        })
+        a[7].style.visibility="hidden"
+        bt[7].addEventListener("click",function (){
+            a[7].style.visibility="visible"
+        })
+        a[8].style.visibility="hidden"
+        bt[8].addEventListener("click",function (){
+            a[8].style.visibility="visible"
+        })
+        a[9].style.visibility="hidden"
+        bt[9].addEventListener("click",function (){
+            a[9].style.visibility="visible"
+        })
+        let im=document.querySelector("img")
+        bt[10].addEventListener("click",function(){
+            im.setAttribute("src","https://images5.alphacoders.com/523/thumb-1920-523395.jpg")
+        })
+    </script>
+</body>
+</html>
