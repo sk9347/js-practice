@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table,tr,td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let b=document.body;
+        b.style.backgroundColor="aqua"
+
+        let he=document.createElement("h1")
+        he.innerText="saiteja";
+        he.style.textAlign="center"
+        document.body.appendChild(he)
+        let mob=document.createElement("p")
+        mob.innerText="mobile: 9347882132";
+        mob.style.textAlign="center";
+        document.body.append(mob)
+        let em=document.createElement("p")
+        em.innerHTML="tez9347@gmail.com";
+        em.style.textAlign="center"
+        document.body.append(em)
+        let im=document.createElement("img")
+        im.setAttribute("src","./-12orig.jpg")
+        im.style.width="100px"
+        im.style.height="100px"
+        im.style.marginLeft="41%"
+        b.append(im)
+        let un=document.createElement("hr")
+        b.append(un)
+        let lh=document.createElement("h4")
+        lh.innerHTML="career objective";
+        lh.style.textAlign="center"
+        b.append(lh);
+        let cr=document.createElement("p")
+        cr.innerText="A result-oriented and motivational B.Com graduate looking for an opportunity in a reputed organization where I can upgrade my knowledge and skills in the field of accounting and finance"
+        b.append(cr)
+        let und=document.createElement("hr")
+        b.append(und)
+        let tbc=document.createElement("table")
+        let trc=document.createElement("tr")
+        let tdc=document.createElement("td")
+        tdc.innerText="institute"
+        trc.appendChild(tdc);
+        tbc.appendChild(trc);
+        tbc.style="#table"
+        b.append(tbc)
+
+    </script>
+    
+</body>
+</html>

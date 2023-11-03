@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>opened page</h1>
+    <button>back</button>
+    <script>
+       function memo(){
+        let obj={}
+        return function calback(sum) {
+            if (obj[sum]!==undefined){
+            // if (sum in obj) {
+                return "this object is already existed"+ obj[sum]
+            }
+            else{
+                let totalsum=0;
+                for (let i = 0; i <= sum; i++) {
+                    
+                    totalsum+=i
+                    obj[sum]=totalsum;
+
+                }
+                return totalsum
+            }
+        }
+    }
+    let b=memo()
+        console.log(b(3));
+        console.log(b(4));
+        console.log(b(3));
+        console.log(b(4));
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>cart</h1>
+    <script>
+        let btn=document.createElement("button")
+        btn.innerText="back"
+        btn.addEventListener("click",()=>{
+            window.history.back()
+        })
+        document.body.append(btn)
+        let tbc=document.createElement("table")
+        document.body.append(tbc)
+        
+        let bt=JSON.parse(localStorage.getItem("clickhere"))
+        let im=document.createElement("img")
+        im.setAttribute("src",bt.thumbnail)
+        document.body.append(im)
+
+        
+        
+    </script>
+</body>
+</html>
